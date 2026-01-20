@@ -1,0 +1,41 @@
+{
+    "configurations": [
+    
+    ]
+}import pygame
+
+
+pygame.init()
+screen = pygame.display.set_mode((640, 480))
+running = True
+
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    pygame.draw.circle(screen, (255, 0, 0), (0, 0), 40)
+    pygame.display.update()
+    
+pygame.quit()
+
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
+
+SCREEN_WIDTH, SCREEN_HEIGHT = 640, 480
+SCREEN_CENTER_X, SCREEN_CENTER_Y = SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2
